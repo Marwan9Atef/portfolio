@@ -1,24 +1,21 @@
 import 'package:jaspr/dom.dart';
 
-// As your CSS styles are defined using just Dart, you can simply
-// use global variables or methods for common things like colors.
-const primaryColor = Color('#01589B');
+const blackColor = Color('#09090B');
+const whiteColor = Color('#FAFAFA');
+const grayColor = Color('#9F9FA9');
 
-// Defines the global CSS styles for this project.
-//
-// By using the @css annotation, these will be rendered automatically to CSS and included in your page.
 @css
 List<StyleRule> get styles => [
-  // Special import rule to include to another css file.
-  css.import('https://fonts.googleapis.com/css?family=Roboto'),
-  // Each style rule takes a valid css selector and a set of styles.
-  // Styles are defined using type-safe css bindings and can be freely chained and nested.
+  css.import(
+    'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap',
+  ),
   css('html, body').styles(
     width: 100.percent,
     minHeight: 100.vh,
     padding: .zero,
     margin: .zero,
-    fontFamily: const .list([FontFamily('Roboto'), FontFamilies.sansSerif]),
+    fontFamily: const .list([FontFamily('Inter'), FontFamily('Space Grotesk'), FontFamilies.sansSerif]),
+    backgroundColor: blackColor,
   ),
   css('h1').styles(
     margin: .unset,
