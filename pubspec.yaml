@@ -19,3 +19,7 @@ jaspr:
   mode: static
   flutter: plugins
   port: 3000
+
+flutter:
+  assets:
+    - web/images/

@@ -1,7 +1,7 @@
 class AssetsManager {
-  static const String logo = 'images/logo.svg';
-  static const String favicon = 'images/favicon.ico';
-  static const String github = 'images/github.svg';
-  static const String gmail = 'images/gmail.svg';
-  static const String linkedin = 'images/linkedin.svg';
+  static const String logo = 'web/images/logo.svg';
+  static const String favicon = 'web/images/favicon.ico';
+  static const String github = 'web/images/github.svg';
+  static const String gmail = 'web/images/gmail.svg';
+  static const String linkedin = 'web/images/linkedin.svg';
 }
