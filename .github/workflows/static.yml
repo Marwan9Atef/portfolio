@@ -37,7 +37,7 @@ jobs:
       - name: Build Jaspr
         run: |
           dart pub global activate jaspr_cli
-          jaspr build --verbose --port 3000
+          jaspr build --verbose
           ls -la build/
 
       - name: Upload artifact
