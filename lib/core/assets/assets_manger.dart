@@ -1,7 +1,9 @@
 class AssetsManager {
-  static const String logo = 'images/logo.svg';
-  static const String favicon = 'images/favicon.ico';
-  static const String github = 'images/github.svg';
-  static const String gmail = 'images/gmail.svg';
-  static const String linkedin = 'images/linkedin.svg';
+  static const String _basePath = String.fromEnvironment('BASE_PATH', defaultValue: '');
+
+  static String get logo => '$_basePath/images/logo.svg';
+  static String get favicon => '$_basePath/images/favicon.ico';
+  static String get github => '$_basePath/images/github.svg';
+  static String get gmail => '$_basePath/images/gmail.svg';
+  static String get linkedin => '$_basePath/images/linkedin.svg';
 }
