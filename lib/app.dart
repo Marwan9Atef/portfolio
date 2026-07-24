@@ -11,7 +11,7 @@ class App extends StatelessComponent {
     return div(classes: 'main', [
      
       Router(routes: [
-        Route(path: '/', title: 'Home', builder: (context, state) => const HomePage()),
+        Route(path: '/', title: 'Marwan Atef', builder: (context, state) => const HomePage()),
      
       ]),
     ]);

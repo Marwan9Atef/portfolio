@@ -6,4 +6,5 @@ class AssetsManager {
   static String get github => '$_basePath/images/github.svg';
   static String get gmail => '$_basePath/images/gmail.svg';
   static String get linkedin => '$_basePath/images/linkedin.svg';
+    static String get talk => '$_basePath/images/talk.svg';
 }

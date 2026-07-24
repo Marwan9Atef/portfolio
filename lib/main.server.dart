@@ -26,13 +26,16 @@ void main() {
   // with the provided parameters and components.
   runApp(
     Document(
-      title: 'portfolio',
+      title: 'Marwan Atef Flutter Devloper',
       head: [
         link(rel: 'icon', href: 'images/favicon.ico'),
+        link(href: 'styles.css', rel: 'stylesheet'),
       ],
       styles: [
         // Special import rule to include to another css file.
-        css.import('https://fonts.googleapis.com/css?family=Roboto'),
+        css.import(
+          'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap',
+        ),
         // Each style rule takes a valid css selector and a set of styles.
         // Styles are defined using type-safe css bindings and can be freely chained and nested.
         css('html, body').styles(
@@ -40,7 +43,7 @@ void main() {
           minHeight: 100.vh,
           padding: .zero,
           margin: .zero,
-          fontFamily: const .list([FontFamily('Roboto'), FontFamilies.sansSerif]),
+          fontFamily: const .list([FontFamily('Inter'), FontFamily('Space Grotesk'), FontFamilies.sansSerif]),
         ),
         css('h1').styles(
           margin: .unset,
