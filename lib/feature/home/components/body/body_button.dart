@@ -38,7 +38,15 @@ class BodyButton extends StatelessComponent {
       padding: Spacing.symmetric(vertical: 14.px, horizontal: 32.px),
       radius: BorderRadius.circular(4.px),
       cursor: .pointer,
-      backgroundColor: primaryColor
+      transition: Transition('all', duration: 200.ms),
+      backgroundColor: primaryColor,
+    ),
+    css(".first-home-button:hover").styles(
+      opacity: 0.9,
+      transform: .translate(y: (-2).px),
+    ),
+    css(".first-home-button:active").styles(
+      transform: .scale(0.98),
     ),
     css(".second-home-button", [
       css("span").styles(
@@ -52,10 +60,18 @@ class BodyButton extends StatelessComponent {
       padding: Spacing.symmetric(vertical: 14.px, horizontal: 32.px),
       radius: BorderRadius.circular(4.px),
       cursor: .pointer,
+      transition: Transition('all', duration: 200.ms),
       justifyContent: JustifyContent.center,
       alignItems: AlignItems.center,
       gap: Gap.column(8.px),
       backgroundColor: Color("#131211"),
+    ),
+    css(".second-home-button:hover").styles(
+      opacity: 0.9,
+      transform: .translate(y: (-2).px),
+    ),
+    css(".second-home-button:active").styles(
+      transform: .scale(0.98),
     ),
   ];
 }
