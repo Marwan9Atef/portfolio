@@ -7,7 +7,7 @@ class HomeBody extends StatelessComponent {
 
   @override
   Component build(BuildContext context) {
-    return div(classes: "home-body", [
+    return div(classes: "home-body fade-in", [
       const HomeBodyText(),
     ]);
   }
@@ -15,10 +15,13 @@ class HomeBody extends StatelessComponent {
   @css
   static List<StyleRule> get styles => [
     css(".home-body").styles(
-
-      margin: Spacing.only(top: 120.px,),
+      margin: Spacing.only(
+        top: 120.px,
+      ),
       gap: Gap.all(48.px),
-
-    )
+    ),
+    css(".home-body.fade-in").styles(
+      animation: Animation(name: 'fade-in', duration: 800.ms, curve: .easeOut),
+    ),
   ];
 }
