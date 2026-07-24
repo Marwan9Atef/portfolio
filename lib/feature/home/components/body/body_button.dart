@@ -9,7 +9,7 @@ class BodyButton extends StatelessComponent {
 
   @override
   Component build(BuildContext context) {
-    return div(classes: "home-buttons", [
+    return div(classes: "home-buttons fade-in", [
       button(classes: "first-home-button", [
         .text('Explore my work'),
       ]),
@@ -26,6 +26,9 @@ class BodyButton extends StatelessComponent {
       display: .flex,
       margin: Spacing.only(bottom: 56.px, top: 20.px),
       gap: Gap.column(16.px),
+    ),
+    css(".home-buttons.fade-in").styles(
+      animation: Animation(name: 'fade-in', duration: 800.ms, curve: .easeOut, delay: 200.ms),
     ),
     css(".first-home-button", [
       css("text").styles(
