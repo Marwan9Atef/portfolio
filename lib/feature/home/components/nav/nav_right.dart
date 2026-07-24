@@ -24,7 +24,7 @@ class NavRight extends StatelessComponent {
   static List<StyleRule> get styles => [
     css(".nav-right").styles(
       display: .flex,
-
+      margin: Spacing.only(top: 11.px),
       gap: Gap.column(16.px),
     ),
     css(".social-link").styles(

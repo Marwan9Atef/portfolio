@@ -6,6 +6,12 @@
 
 import 'package:jaspr/server.dart';
 import 'package:portfolio/core/constants/theme.dart' as _theme;
+import 'package:portfolio/feature/home/components/body/body_button.dart'
+    as _body_button;
+import 'package:portfolio/feature/home/components/body/home_body.dart'
+    as _home_body;
+import 'package:portfolio/feature/home/components/body/home_body_text.dart'
+    as _home_body_text;
 import 'package:portfolio/feature/home/components/nav/home_nav.dart'
     as _home_nav;
 import 'package:portfolio/feature/home/components/nav/nav_center.dart'
@@ -35,6 +41,9 @@ ServerOptions get defaultServerOptions => ServerOptions(
   clientId: 'main.client.dart.js',
   styles: () => [
     ..._theme.styles,
+    ..._body_button.BodyButton.styles,
+    ..._home_body.HomeBody.styles,
+    ..._home_body_text.HomeBodyText.styles,
     ..._home_nav.HomeNav.styles,
     ..._nav_center.NavCenter.styles,
     ..._nav_left.NavLeft.styles,

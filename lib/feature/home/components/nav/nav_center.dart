@@ -20,6 +20,7 @@ class NavCenter extends StatelessComponent {
   static List<StyleRule> get styles => [
     css('.navbar-links').styles(
       display: Display.flex,
+      margin: Spacing.only(top: 11.px),
       gap: Gap(column: 32.px),
     ),
     css('.navbar-links a').styles(

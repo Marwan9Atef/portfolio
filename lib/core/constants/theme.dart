@@ -1,5 +1,6 @@
 import 'package:jaspr/dom.dart';
 
+const primaryColor = Color('#C4B896');
 const blackColor = Color('#09090B');
 const whiteColor = Color('#FAFAFA');
 const grayColor = Color('#9F9FA9');
@@ -21,4 +22,8 @@ List<StyleRule> get styles => [
     margin: .unset,
     fontSize: 4.rem,
   ),
+  css('p,span,text').styles(
+    margin: .zero,
+  ),
+    
 ];
