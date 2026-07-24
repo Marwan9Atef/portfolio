@@ -16,7 +16,7 @@ class HomeBody extends StatelessComponent {
   static List<StyleRule> get styles => [
     css(".home-body").styles(
 
-      margin: Spacing.only(top: 120.px, left: 24.px, right: 24.px),
+      margin: Spacing.only(top: 120.px,),
       gap: Gap.all(48.px),
 
     )
