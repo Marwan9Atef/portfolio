@@ -256,23 +256,14 @@
   .w-full {
     width: 100%;
   }
-  .flex-shrink {
-    flex-shrink: 1;
-  }
   .shrink {
     flex-shrink: 1;
-  }
-  .border-collapse {
-    border-collapse: collapse;
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -305,23 +296,11 @@
   .border-gray {
     border-color: var(--color-gray);
   }
-  .border-primary {
-    border-color: var(--color-primary);
-  }
   .bg-black {
     background-color: var(--color-black);
   }
   .bg-cardColor {
     background-color: var(--color-cardColor);
-  }
-  .bg-gray {
-    background-color: var(--color-gray);
-  }
-  .bg-primary {
-    background-color: var(--color-primary);
-  }
-  .bg-white {
-    background-color: var(--color-white);
   }
   .p-7 {
     padding: calc(var(--spacing) * 7);
@@ -347,9 +326,6 @@
   .align-middle {
     vertical-align: middle;
   }
-  .font-inter {
-    font-family: var(--font-inter);
-  }
   .font-space {
     font-family: var(--font-space);
   }
@@ -373,9 +349,6 @@
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
-  .text-black {
-    color: var(--color-black);
-  }
   .text-gray {
     color: var(--color-gray);
   }
@@ -396,9 +369,6 @@
   }
   .italic {
     font-style: italic;
-  }
-  .underline {
-    text-decoration-line: underline;
   }
   .shadow {
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
@@ -436,68 +406,14 @@
       --tw-scale-z: 105%;
       scale: var(--tw-scale-x) var(--tw-scale-y);
     }
-    .hover\:scale-110:hover {
-      --tw-scale-x: 110%;
-      --tw-scale-y: 110%;
-      --tw-scale-z: 110%;
-      scale: var(--tw-scale-x) var(--tw-scale-y);
-    }
     .hover\:border-\[\#C4B896\]:hover {
       border-color: #C4B896;
-    }
-    .hover\:border-transparent:hover {
-      border-color: transparent;
-    }
-    .hover\:border-yellow-300:hover {
-      border-color: var(--color-yellow-300);
     }
     .hover\:bg-\[\#C4B896\]:hover {
       background-color: #C4B896;
     }
-    .hover\:bg-gradient-to-r:hover {
-      --tw-gradient-position: to right in oklab;
-      background-image: linear-gradient(var(--tw-gradient-stops));
-    }
-    .hover\:from-purple-600:hover {
-      --tw-gradient-from: var(--color-purple-600);
-      --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-    }
-    .hover\:from-yellow-200:hover {
-      --tw-gradient-from: var(--color-yellow-200);
-      --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-    }
-    .hover\:from-yellow-400:hover {
-      --tw-gradient-from: var(--color-yellow-400);
-      --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-    }
-    .hover\:to-amber-100:hover {
-      --tw-gradient-to: var(--color-amber-100);
-      --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-    }
-    .hover\:to-amber-300:hover {
-      --tw-gradient-to: var(--color-amber-300);
-      --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-    }
-    .hover\:to-amber-600:hover {
-      --tw-gradient-to: var(--color-amber-600);
-      --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-    }
-    .hover\:to-blue-600:hover {
-      --tw-gradient-to: var(--color-blue-600);
-      --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-    }
     .hover\:text-black:hover {
       color: var(--color-black);
-    }
-    .hover\:text-gray-900:hover {
-      color: var(--color-gray-900);
-    }
-    .hover\:text-white:hover {
-      color: var(--color-white);
-    }
-    .hover\:shadow-lg:hover {
-      --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
-      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
     }
     .hover\:shadow-md:hover {
       --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
@@ -513,30 +429,6 @@
     @supports (color: color-mix(in lab, red, red)) {
       .hover\:shadow-\[\#C4B896\]\/40:hover {
         --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, #C4B896 40%, transparent) var(--tw-shadow-alpha), transparent);
-      }
-    }
-    .hover\:shadow-purple-500\/50:hover {
-      --tw-shadow-color: color-mix(in srgb, oklch(62.7% 0.265 303.9) 50%, transparent);
-    }
-    @supports (color: color-mix(in lab, red, red)) {
-      .hover\:shadow-purple-500\/50:hover {
-        --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--color-purple-500) 50%, transparent) var(--tw-shadow-alpha), transparent);
-      }
-    }
-    .hover\:shadow-yellow-400\/30:hover {
-      --tw-shadow-color: color-mix(in srgb, oklch(85.2% 0.199 91.936) 30%, transparent);
-    }
-    @supports (color: color-mix(in lab, red, red)) {
-      .hover\:shadow-yellow-400\/30:hover {
-        --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--color-yellow-400) 30%, transparent) var(--tw-shadow-alpha), transparent);
-      }
-    }
-    .hover\:shadow-yellow-500\/50:hover {
-      --tw-shadow-color: color-mix(in srgb, oklch(79.5% 0.184 86.047) 50%, transparent);
-    }
-    @supports (color: color-mix(in lab, red, red)) {
-      .hover\:shadow-yellow-500\/50:hover {
-        --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--color-yellow-500) 50%, transparent) var(--tw-shadow-alpha), transparent);
       }
     }
   }
@@ -883,48 +775,6 @@ html {
   inherits: false;
   initial-value: 1;
 }
-@property --tw-gradient-position {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-gradient-from {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: #0000;
-}
-@property --tw-gradient-via {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: #0000;
-}
-@property --tw-gradient-to {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: #0000;
-}
-@property --tw-gradient-stops {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-gradient-via-stops {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-gradient-from-position {
-  syntax: "<length-percentage>";
-  inherits: false;
-  initial-value: 0%;
-}
-@property --tw-gradient-via-position {
-  syntax: "<length-percentage>";
-  inherits: false;
-  initial-value: 50%;
-}
-@property --tw-gradient-to-position {
-  syntax: "<length-percentage>";
-  inherits: false;
-  initial-value: 100%;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -967,15 +817,6 @@ html {
       --tw-scale-x: 1;
       --tw-scale-y: 1;
       --tw-scale-z: 1;
-      --tw-gradient-position: initial;
-      --tw-gradient-from: #0000;
-      --tw-gradient-via: #0000;
-      --tw-gradient-to: #0000;
-      --tw-gradient-stops: initial;
-      --tw-gradient-via-stops: initial;
-      --tw-gradient-from-position: 0%;
-      --tw-gradient-via-position: 50%;
-      --tw-gradient-to-position: 100%;
     }
   }
 }
