@@ -1,6 +1,5 @@
 import 'package:jaspr/dom.dart';
 import 'package:jaspr/jaspr.dart';
-import 'package:universal_web/web.dart' as web;
 
 @client
 class NavCenter extends StatefulComponent {
@@ -32,7 +31,6 @@ class _NavCenterState extends State<NavCenter> {
         setState(() {
           _activeSection = section;
         });
-        web.document.getElementById(section)?.scrollIntoView();
       },
       [Component.text(text)],
     );

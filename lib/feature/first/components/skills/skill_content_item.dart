@@ -18,12 +18,15 @@ class SkillContentItem extends StatelessComponent {
 
   @override
   Component build(BuildContext context) {
-    return div(classes: "p-7 rounded-md bg-cardColor", [
-      p(classes: "text-primary font-space font-normal text-xs pb-3", [.text(index)]),
-      p(classes: "text-gray font-space font-normal text-base pb-5", [
-        .text(description),
-      ]),
-      SkillItems(skills: skills),
-    ]);
+    return div(
+      classes: "p-7 rounded-md bg-cardColor hover:scale-105 hover:shadow-xl transition-all duration-300 cursor-pointer",
+      [
+        p(classes: "text-primary font-space font-normal text-xs pb-3", [.text(index)]),
+        p(classes: "text-gray font-space font-normal text-base pb-5", [
+          .text(description),
+        ]),
+        SkillItems(skills: skills),
+      ],
+    );
   }
 }
