@@ -10,12 +10,7 @@ class HomeNav extends StatelessComponent {
 
   @override
   Component build(BuildContext context) {
-    return  div(classes: "home-nav", [
-      const NavLeft(),
-      const NavCenter(),
-      const NavRight()
-    
-    ]);
+    return div(classes: "home-nav", [const NavLeft(), const NavCenter(), const NavRight()]);
   }
 
   @css
@@ -25,8 +20,8 @@ class HomeNav extends StatelessComponent {
       position: .fixed(top: 0.px, left: 0.px, right: 0.px),
       padding: Padding.symmetric(horizontal: 32.px, vertical: 16.px),
       justifyContent: .spaceBetween,
-      backgroundColor: blackColor
-
+      backgroundColor: blackColor,
+      raw: {'z-index': '1000'},
     ),
   ];
 }
