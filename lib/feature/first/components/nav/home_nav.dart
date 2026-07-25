@@ -1,9 +1,9 @@
 import 'package:jaspr/dom.dart';
 import 'package:jaspr/jaspr.dart';
 import 'package:portfolio/core/constants/theme.dart';
-import 'package:portfolio/feature/home/components/nav/nav_center.dart';
-import 'package:portfolio/feature/home/components/nav/nav_left.dart';
-import 'package:portfolio/feature/home/components/nav/nav_right.dart';
+import 'package:portfolio/feature/first/components/nav/nav_center.dart';
+import 'package:portfolio/feature/first/components/nav/nav_left.dart';
+import 'package:portfolio/feature/first/components/nav/nav_right.dart';
 
 class HomeNav extends StatelessComponent {
   const HomeNav({super.key});

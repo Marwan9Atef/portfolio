@@ -1,5 +1,5 @@
 import 'package:jaspr/dom.dart';
-import 'package:jaspr/server.dart';
+import 'package:jaspr/jaspr.dart';
 import 'package:portfolio/core/assets/assets_manger.dart';
 
 class SkillsStart extends StatelessComponent {

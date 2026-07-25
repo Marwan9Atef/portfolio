@@ -1,6 +1,6 @@
 import 'package:jaspr/dom.dart';
-import 'package:jaspr/server.dart';
-import 'package:portfolio/feature/home/components/body/home_body_text.dart';
+import 'package:jaspr/jaspr.dart';
+import 'package:portfolio/feature/first/components/body/home_body_text.dart';
 
 class HomeBody extends StatelessComponent {
   const HomeBody({super.key});
@@ -20,6 +20,5 @@ class HomeBody extends StatelessComponent {
       ),
       gap: Gap.all(48.px),
     ),
-
   ];
 }

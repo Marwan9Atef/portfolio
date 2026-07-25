@@ -6,6 +6,10 @@
 
 import 'package:jaspr/client.dart';
 
+import 'package:portfolio/feature/first/components/nav/nav_center.dart'
+    deferred as _nav_center;
+import 'package:portfolio/app.dart' deferred as _app;
+
 /// Default [ClientOptions] for use with your Jaspr project.
 ///
 /// Use this to initialize Jaspr **before** calling [runApp].
@@ -22,4 +26,12 @@ import 'package:jaspr/client.dart';
 ///   runApp(...);
 /// }
 /// ```
-ClientOptions get defaultClientOptions => ClientOptions();
+ClientOptions get defaultClientOptions => ClientOptions(
+  clients: {
+    'app': ClientLoader((p) => _app.App(), loader: _app.loadLibrary),
+    'nav_center': ClientLoader(
+      (p) => _nav_center.NavCenter(),
+      loader: _nav_center.loadLibrary,
+    ),
+  },
+);
