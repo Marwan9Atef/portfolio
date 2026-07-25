@@ -18,6 +18,7 @@ export default {
     'home-body',
     'home-buttons', 'first-home-button', 'second-home-button',
     'main',
+    'hover:bg-[#C4B896]', 'hover:text-black', 'hover:border-[#C4B896]', 'hover:shadow-[#C4B896]/40',
   ],
   theme: {
     extend: {
