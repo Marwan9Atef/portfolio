@@ -101,10 +101,6 @@
   z-index: 100;
 }
 
-.home-body {
-  padding: 8rem 2rem 2rem;
-}
-
 .home-body-text-first {
   font-size: 1.125rem;
   color: var(--color-gray);
