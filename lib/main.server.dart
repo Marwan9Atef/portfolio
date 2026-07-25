@@ -20,6 +20,9 @@ void main() {
     options: defaultServerOptions,
   );
 
+  // Get BASE_PATH from environment variable
+  final basePath = String.fromEnvironment('BASE_PATH', defaultValue: '');
+
   // Starts the app.
   //
   // [Document] renders the root document structure (<html>, <head> and <body>)
@@ -28,8 +31,8 @@ void main() {
     Document(
       title: 'Marwan Atef Flutter Devloper',
       head: [
-        link(rel: 'icon', href: 'images/favicon.ico'),
-        link(href: 'styles.css', rel: 'stylesheet'),
+        link(rel: 'icon', href: '$basePath/images/favicon.ico'),
+        link(href: '$basePath/styles.css', rel: 'stylesheet'),
       ],
       styles: [
         // Special import rule to include to another css file.

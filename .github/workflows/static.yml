@@ -47,19 +47,20 @@ jobs:
           sudo mv tailwindcss-linux-x64 /usr/local/bin/tailwindcss
 
       - name: Build CSS
-        run: tailwindcss -i web/styles.tw.css -o web/styles.css --minify --config tailwind.config.js
+        run: |
+          tailwindcss -i web/styles.tw.css -o web/styles.css --minify --config tailwind.config.js
+          echo "CSS file size:"
+          ls -lh web/styles.css
 
       - name: Build Jaspr
         run: |
           dart pub global activate jaspr_cli
           jaspr build --verbose --dart-define=BASE_PATH=/portfolio/
           ls -la build/
-
-      - name: Copy web assets to build
-        run: |
-          cp web/styles.css build/jaspr/
-          cp web/favicon.ico build/jaspr/
-          cp -r web/images build/jaspr/
+          echo "Build/jaspr contents:"
+          ls -la build/jaspr/
+          echo "Check if styles.css exists in build:"
+          test -f build/jaspr/styles.css && echo "styles.css found" || echo "styles.css NOT found"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
