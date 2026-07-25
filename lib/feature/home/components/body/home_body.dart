@@ -20,8 +20,6 @@ class HomeBody extends StatelessComponent {
       ),
       gap: Gap.all(48.px),
     ),
-    css(".home-body.fade-in").styles(
-      animation: Animation(name: 'fade-in', duration: 800.ms, curve: .easeOut),
-    ),
+
   ];
 }

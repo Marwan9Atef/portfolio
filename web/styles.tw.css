@@ -1,1 +1,30 @@
+/* tailwindcss v4 - ignore unknown at-rules */
 @import "tailwindcss";
+
+@theme {
+  --color-primary: #C4B896;
+  --color-black: #09090B;
+  --color-white: #FAFAFA;
+  --color-gray: #9F9FA9;
+  
+  --font-inter: 'Inter', sans-serif;
+  --font-space: 'Space Grotesk', sans-serif;
+}
+
+/* Force generation of custom utilities */
+@layer utilities {
+  .bg-primary { background-color: var(--color-primary); }
+  .text-primary { color: var(--color-primary); }
+  .border-primary { border-color: var(--color-primary); }
+  
+  .bg-black { background-color: var(--color-black); }
+  .text-black { color: var(--color-black); }
+  
+  .bg-white { background-color: var(--color-white); }
+  .text-white { color: var(--color-white); }
+  
+  .bg-gray { background-color: var(--color-gray); }
+  .text-gray { color: var(--color-gray); }
+  
+  .font-inter { font-family: var(--font-inter); }
+}

@@ -9,10 +9,7 @@ class HomePage extends StatelessComponent {
 
   @override
   Component build(BuildContext context) {
-    return div(styles: Styles(
-      margin: Spacing.symmetric(horizontal: 40.px),
-      
-    ),[
+    return div([
       const HomeNav(),
       const HomeBody(),
       const BodyButton()
