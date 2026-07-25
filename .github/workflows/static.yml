@@ -55,6 +55,12 @@ jobs:
           jaspr build --verbose --dart-define=BASE_PATH=/portfolio/
           ls -la build/
 
+      - name: Copy web assets to build
+        run: |
+          cp web/styles.css build/jaspr/
+          cp web/favicon.ico build/jaspr/
+          cp -r web/images build/jaspr/
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
