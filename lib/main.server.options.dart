@@ -7,7 +7,6 @@
 import 'package:jaspr/server.dart';
 import 'package:portfolio/feature/first/components/nav/nav_center.dart'
     as _nav_center;
-import 'package:portfolio/app.dart' as _app;
 
 /// Default [ServerOptions] for use with your Jaspr project.
 ///
@@ -28,7 +27,6 @@ import 'package:portfolio/app.dart' as _app;
 ServerOptions get defaultServerOptions => ServerOptions(
   clientId: 'main.client.dart.js',
   clients: {
-    _app.App: ClientTarget<_app.App>('app'),
     _nav_center.NavCenter: ClientTarget<_nav_center.NavCenter>('nav_center'),
   },
 );

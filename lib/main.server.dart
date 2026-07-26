@@ -31,6 +31,8 @@ void main() {
     Document(
       title: 'Marwan Atef Flutter Devloper',
       head: [
+        meta(name: 'viewport', content: 'width=device-width, initial-scale=1.0'),
+        meta(httpEquiv: 'Content-Security-Policy', content: "script-src 'self' 'unsafe-eval' 'unsafe-inline';"),
         link(rel: 'icon', href: '$basePath/images/favicon.ico'),
         link(href: '$basePath/styles.css', rel: 'stylesheet'),
       ],

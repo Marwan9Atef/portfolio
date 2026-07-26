@@ -14,7 +14,7 @@ class _NavCenterState extends State<NavCenter> {
 
   @override
   Component build(BuildContext context) {
-    return nav(classes: "navbar-links", [
+    return nav(classes: "navbar-links  ", [
       _buildNavLink('Home', '#home', 'home'),
       _buildNavLink('Skills', '#skills', 'skills'),
       _buildNavLink('Projects', '#projects', 'projects'),

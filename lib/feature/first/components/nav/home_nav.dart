@@ -11,7 +11,9 @@ class HomeNav extends StatelessComponent {
   Component build(BuildContext context) {
     return div(classes: "flex fixed top-0 left-0 right-0 px-8 py-4 justify-between bg-[#09090B] z-[1000]", [
       const NavLeft(),
-      const NavCenter(),
+      div(classes: "hidden md:block", [
+        const NavCenter(),
+      ]),
       const NavRight(),
     ]);
   }
