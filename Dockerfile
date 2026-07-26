@@ -39,5 +39,5 @@ RUN dart pub global activate jaspr_cli
 # Build Jaspr project
 RUN jaspr build
 
-# Copy build output to a location Vercel can use
-RUN mkdir -p /vercel/output/static && cp -r build/jaspr/* /vercel/output/static/
+# Copy build output to public directory for Vercel
+RUN mkdir -p /app/public && cp -r build/jaspr/* /app/public/
