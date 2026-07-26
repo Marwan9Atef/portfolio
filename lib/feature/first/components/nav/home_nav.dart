@@ -10,7 +10,8 @@ class HomeNav extends StatelessComponent {
   @override
   Component build(BuildContext context) {
     return div(
-      classes: "flex fixed top-0 left-0 right-0 px-4 sm:px-6 md:px-8 py-4 justify-between bg-[#09090B] z-[1000]",
+      classes:
+          "flex fixed top-0 left-0 right-0 px-4 sm:px-6 md:px-8 py-4 justify-between bg-[#09090B] z-[1000] overflow-hidden",
       [
         const NavLeft(),
         div(classes: "hidden md:block", [
