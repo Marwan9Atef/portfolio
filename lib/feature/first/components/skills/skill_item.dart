@@ -9,7 +9,7 @@ class SkillItem extends StatelessComponent {
   Component build(BuildContext context) {
     return div(
       classes:
-          "text-primary text-xs font-space font-normal bg-black rounded-md px-2 py-1 border border-gray hover:bg-[#C4B896] hover:text-black hover:border-[#C4B896] hover:shadow-md hover:shadow-[#C4B896]/40 hover:scale-105 transition-all duration-300 cursor-pointer",
+          "text-primary text-xs sm:text-sm font-space font-normal bg-black rounded-md px-2 py-1 sm:px-3 sm:py-1.5 border border-gray hover:bg-[#C4B896] hover:text-black hover:border-[#C4B896] hover:shadow-md hover:shadow-[#C4B896]/40 hover:scale-105 transition-all duration-300 cursor-pointer",
       [
         .text(text),
       ],

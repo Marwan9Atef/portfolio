@@ -19,6 +19,7 @@ export default {
     'home-buttons', 'first-home-button', 'second-home-button',
     'main',
     'hover:bg-[#C4B896]', 'hover:text-black', 'hover:border-[#C4B896]', 'hover:shadow-[#C4B896]/40',
+    'bg-[#C4B896]', 'bg-[#131211]', 'text-[#09090B]', 'text-[#FAFAFA]',
   ],
   theme: {
     extend: {
@@ -31,6 +32,7 @@ export default {
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
         space: ['Space Grotesk', 'sans-serif'],
+        spaceGrotesk: ['Space Grotesk', 'sans-serif'],
       },
     },
   },
