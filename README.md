@@ -18,18 +18,21 @@ The output will be located inside the `build/jaspr/` directory.
 
 ### Vercel
 
-This project is configured for Vercel deployment. To deploy:
+This project uses Docker for Vercel deployment. To deploy:
 
 1. Push your code to a Git repository (GitHub, GitLab, or Bitbucket)
 2. Import the project in Vercel
-3. Vercel will automatically detect the configuration and deploy
+3. Vercel will automatically detect the Dockerfile and build using Docker
 
-The build process:
+The Docker build process:
+- Uses Ubuntu 22.04 base image
+- Installs Dart SDK 3.5.0
 - Installs Tailwind CSS CLI
 - Runs `dart pub get` for dependencies
-- Compiles Tailwind CSS from `web/styles.tw.css` to `web/styles.css`
+- Compiles Tailwind CSS from `web/styles.tw.css` to `web/styles.css` (minified)
 - Activates Jaspr CLI
 - Builds the static site with `jaspr build`
+- Copies output to `/vercel/output/static/` for Vercel
 
 ### GitHub Pages
 
