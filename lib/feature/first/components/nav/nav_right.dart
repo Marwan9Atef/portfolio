@@ -7,7 +7,7 @@ class NavRight extends StatelessComponent {
 
   @override
   Component build(BuildContext context) {
-    return div(classes: "flex mt-[11px] gap-4", [
+    return div(classes: "flex mt-[11px] gap-3 sm:gap-4", [
       a(
         href: "https://github.com/Marwan9Atef",
         target: Target.blank,
