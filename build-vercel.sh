@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# Install Dart SDK
-wget https://dl.google.com/linux/dart/dart_3.5.0-1_amd64.deb
-sudo dpkg -i dart_3.5.0-1_amd64.deb
-export PATH="$PATH:/usr/lib/dart/bin"
+# Install Dart SDK for Alpine Linux
+wget https://storage.googleapis.com/dart-archive/channels/stable/release/3.5.0/sdk/dartsdk-linux-x64-release.zip
+unzip dartsdk-linux-x64-release.zip
+export PATH="$PATH:$PWD/dart-sdk/bin"
 
 # Install Tailwind CSS
 curl -sLO https://github.com/tailwindlabs/tailwindcss/releases/latest/download/tailwindcss-linux-x64

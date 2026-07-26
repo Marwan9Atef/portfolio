@@ -1,5 +1,5 @@
 {
   "buildCommand": "chmod +x build-vercel.sh && ./build-vercel.sh",
   "outputDirectory": "build/jaspr",
-  "installCommand": "apt-get update && apt-get install -y wget dpkg"
+  "installCommand": "apk add --no-cache wget curl bash unzip"
 }
