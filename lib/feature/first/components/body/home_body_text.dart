@@ -27,7 +27,7 @@ class HomeBodyText extends StatelessComponent {
       ),
       br(classes: "h-0 sm:h-8"),
       p(classes: "text-[#9F9FA9] font-inter font-normal text-sm sm:text-base lg:text-lg xl:text-xl", [
-        .text("Marwan Atef — Flutter developer focused on clean architecture, advanced integrations,and"),
+        .text("Marwan Atef — Flutter developer focused on clean architecture, advanced integrations,and "),
         br(classes: "hidden sm:block"),
         .text("production-grade delivery. Shipping apps used by hundreds of thousands."),
       ]),

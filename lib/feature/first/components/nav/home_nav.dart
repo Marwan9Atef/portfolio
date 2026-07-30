@@ -16,6 +16,7 @@ class HomeNav extends StatelessComponent {
         const NavLeft(),
         div(classes: "hidden md:block", [
           const NavCenter(),
+          
         ]),
         const NavRight(),
       ],

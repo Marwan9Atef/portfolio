@@ -2,6 +2,34 @@
 
 /* tailwindcss v4 - ignore unknown at-rules */
 @import "tailwindcss";
+@import "https://cdn.jsdelivr.net/npm/daisyui@5/dist/full.css";
+
+/* daisyUI custom theme configuration */
+:root {
+  --p: #C4B896;
+  --pf: #09090B;
+  --s: #9F9FA9;
+  --sf: #09090B;
+  --a: #C4B896;
+  --af: #09090B;
+  --n: #27272A;
+  --nf: #FAFAFA;
+  --b1: #09090B;
+  --b2: #131211;
+  --b3: #1C1C1E;
+  --bc: #FAFAFA;
+  --in: #3B82F6;
+  --in-f: #FFFFFF;
+  --su: #10B981;
+  --su-f: #FFFFFF;
+  --wa: #F59E0B;
+  --wa-f: #09090B;
+  --er: #EF4444;
+  --er-f: #FFFFFF;
+  --rounded-box: 0.25rem;
+  --rounded-btn: 0.25rem;
+  --rounded-badge: 0.25rem;
+}
 
 html {
   scroll-behavior: smooth;

@@ -17,8 +17,10 @@ class _NavCenterState extends State<NavCenter> {
     return nav(classes: "navbar-links  ", [
       _buildNavLink('Home', '#home', 'home'),
       _buildNavLink('Skills', '#skills', 'skills'),
+      _buildNavLink('Experience', '#experience ', 'experience '),
       _buildNavLink('Projects', '#projects', 'projects'),
       _buildNavLink('Contact', '#contact', 'contact'),
+
     ]);
   }
 

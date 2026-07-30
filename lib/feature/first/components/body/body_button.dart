@@ -7,8 +7,8 @@ class BodyButton extends StatelessComponent {
 
   @override
   Component build(BuildContext context) {
-    return div(classes: "home-buttons flex flex-col sm:flex-row gap-3 sm:gap-4", [
-      button(classes: "first-home-button w-full sm:w-auto", [.text('Explore my work')]),
+    return div(classes: "home-buttons flex flex-col sm:flex-row gap-3 sm:gap-4 fade-in ", [
+      button(classes: "first-home-button w-full sm:w-auto ", [.text('Explore my work')]),
       button(classes: "second-home-button w-full sm:w-auto", [
         .text("Let's talk"),
         img(src: AssetsManager.talk),
