@@ -2,12 +2,13 @@ import 'package:jaspr/dom.dart';
 import 'package:jaspr/jaspr.dart';
 import 'package:portfolio/core/assets/assets_manger.dart';
 
+
 class NavRight extends StatelessComponent {
   const NavRight({super.key});
 
   @override
   Component build(BuildContext context) {
-    return div(classes: "flex mt-[11px] gap-2 sm:gap-3 md:gap-4 shrink-0", [
+    return div(classes: "flex mt-[11px] gap-2   sm:gap-3 md:gap-4 shrink-0", [
       a(
         href: "https://github.com/Marwan9Atef",
         target: Target.blank,
@@ -31,6 +32,7 @@ class NavRight extends StatelessComponent {
           img(src: AssetsManager.gmail, classes: "w-5 h-5 transition-filter duration-300 hover:brightness-125"),
         ],
       ),
+  
     ]);
   }
 }
