@@ -1,5 +1,6 @@
 import 'package:jaspr/dom.dart';
 import 'package:jaspr/jaspr.dart';
+import 'package:portfolio/core/assets/assets_manger.dart';
 
 @client
 class NavCenter extends StatefulComponent {
@@ -10,16 +11,16 @@ class NavCenter extends StatefulComponent {
 }
 
 class _NavCenterState extends State<NavCenter> {
-  static const String _basePath = String.fromEnvironment('BASE_PATH', defaultValue: '');
+
 
   @override
   Component build(BuildContext context) {
     return nav(classes: "navbar-links  ", [
-      _buildNavLink('Home', '$_basePath#Home'),
-      _buildNavLink('Skills', '$_basePath#Skills'),
-      _buildNavLink('Experience', '$_basePath#experience'),
-      _buildNavLink('Projects', '$_basePath#projects'),
-      _buildNavLink('Contact', '$_basePath#contact'),
+      _buildNavLink('Home', '${AssetsManager.basePath}#Home'),
+      _buildNavLink('Skills', '${AssetsManager.basePath}#Skills'),
+      _buildNavLink('Experience', '${AssetsManager.basePath}#experience'),
+      _buildNavLink('Projects', '${AssetsManager.basePath}#projects'),
+      _buildNavLink('Contact', '${AssetsManager.basePath}#contact'),
 
     ]);
   }
