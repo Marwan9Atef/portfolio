@@ -9,26 +9,8 @@ class WebPage extends StatelessComponent {
   @override
   Component build(BuildContext context) {
     return div(classes: "mx-4 sm:mx-6 md:mx-8 lg:mx-10", [
-      div(id: "home", [const HomePage()]),
-      div(id: "skills", [const SkillPage()]),
-          div(id: "experience", [
-        div(classes: "fade-in py-20", [
-          h2(classes: "font-space italic text-white font-semibold text-4xl capitalize", [.text("Experience Section")]),
-          p(classes: "text-gray pt-4 flex text-base", [.text("Coming soon...")]),
-        ]),
-      ]),
-      div(id: "projects", [
-        div(classes: "fade-in py-20", [
-          h2(classes: "font-space italic text-white font-semibold text-4xl capitalize", [.text("Projects Section")]),
-          p(classes: "text-gray pt-4 flex text-base", [.text("Coming soon...")]),
-        ]),
-      ]),
-      div(id: "contact", [
-        div(classes: "fade-in py-20", [
-          h2(classes: "font-space italic text-white font-semibold text-4xl capitalize", [.text("Contact Section")]),
-          p(classes: "text-gray pt-4 flex text-base", [.text("Coming soon...")]),
-        ]),
-      ]),
+      const HomePage(),
+      const SkillPage(),
     ]);
   }
 }

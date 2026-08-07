@@ -7,7 +7,9 @@ class HomeBody extends StatelessComponent {
 
   @override
   Component build(BuildContext context) {
-    return div(classes: "mt-20 sm:mt-24 md:mt-28 lg:mt-30 fade-in", [
+    return div(
+      id: "Home",
+      classes: "scroll-mt-[100px] mt-20 sm:mt-24 md:mt-28 lg:mt-30 fade-in", [
       const HomeBodyText(),
     ]);
   }

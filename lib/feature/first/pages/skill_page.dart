@@ -8,6 +8,8 @@ class SkillPage extends StatelessComponent {
 
   @override
   Component build(BuildContext context) {
-    return div(classes: "fade-in", [const SkillsStart(), const SkillsContent()]);
+    return div(
+      id: "Skills",
+      classes: "scroll-mt-[100px] fade-in", [const SkillsStart(), const SkillsContent()]);
   }
 }

@@ -10,30 +10,26 @@ class NavCenter extends StatefulComponent {
 }
 
 class _NavCenterState extends State<NavCenter> {
-  String _activeSection = 'home';
+
 
   @override
   Component build(BuildContext context) {
     return nav(classes: "navbar-links  ", [
-      _buildNavLink('Home', '#home', 'home'),
-      _buildNavLink('Skills', '#skills', 'skills'),
-      _buildNavLink('Experience', '#experience ', 'experience '),
-      _buildNavLink('Projects', '#projects', 'projects'),
-      _buildNavLink('Contact', '#contact', 'contact'),
+      _buildNavLink('Home', '#Home'),
+      _buildNavLink('Skills', '#Skills'),
+      _buildNavLink('Experience', '#experience '),
+      _buildNavLink('Projects', '#projects'),
+      _buildNavLink('Contact', '#contact'),
 
     ]);
   }
 
-  Component _buildNavLink(String text, String href, String section) {
-    final isActive = _activeSection == section;
+  Component _buildNavLink(String text, String href) {
+  
     return a(
       href: href,
-      classes: isActive ? 'active' : '',
-      onClick: () {
-        setState(() {
-          _activeSection = section;
-        });
-      },
+  
+   
       [Component.text(text)],
     );
   }
