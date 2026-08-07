@@ -10,16 +10,16 @@ class NavCenter extends StatefulComponent {
 }
 
 class _NavCenterState extends State<NavCenter> {
-
+  static const String _basePath = String.fromEnvironment('BASE_PATH', defaultValue: '');
 
   @override
   Component build(BuildContext context) {
     return nav(classes: "navbar-links  ", [
-      _buildNavLink('Home', '#Home'),
-      _buildNavLink('Skills', '#Skills'),
-      _buildNavLink('Experience', '#experience '),
-      _buildNavLink('Projects', '#projects'),
-      _buildNavLink('Contact', '#contact'),
+      _buildNavLink('Home', '$_basePath#Home'),
+      _buildNavLink('Skills', '$_basePath#Skills'),
+      _buildNavLink('Experience', '$_basePath#experience'),
+      _buildNavLink('Projects', '$_basePath#projects'),
+      _buildNavLink('Contact', '$_basePath#contact'),
 
     ]);
   }
