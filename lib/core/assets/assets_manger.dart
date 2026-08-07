@@ -1,12 +1,12 @@
 class AssetsManager {
-  static const String _basePath = String.fromEnvironment('BASE_PATH', defaultValue: '');
+  static const String basePath = String.fromEnvironment('BASE_PATH', defaultValue: '');
 
-  static String get logo => '$_basePath/images/logo.svg';
-  static String get favicon => '$_basePath/images/favicon.ico';
-  static String get github => '$_basePath/images/github.svg';
-  static String get gmail => '$_basePath/images/gmail.svg';
-  static String get linkedin => '$_basePath/images/linkedin.svg';
-    static String get talk => '$_basePath/images/talk.svg';
-    static String get line => '$_basePath/images/line.svg';
-    static String get dropdwon => '$_basePath/images/dropdown.svg';
+  static String get logo => '$basePath/images/logo.svg';
+  static String get favicon => '$basePath/images/favicon.ico';
+  static String get github => '$basePath/images/github.svg';
+  static String get gmail => '$basePath/images/gmail.svg';
+  static String get linkedin => '$basePath/images/linkedin.svg';
+    static String get talk => '$basePath/images/talk.svg';
+    static String get line => '$basePath/images/line.svg';
+    static String get dropdwon => '$basePath/images/dropdown.svg';
 }
