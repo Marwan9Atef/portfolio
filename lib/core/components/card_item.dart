@@ -1,9 +1,9 @@
 import 'package:jaspr/dom.dart';
 import 'package:jaspr/jaspr.dart';
 
-class SkillItem extends StatelessComponent {
+class CardItem extends StatelessComponent {
   final String text;
-  const SkillItem({super.key, required this.text});
+  const CardItem({super.key, required this.text});
 
   @override
   Component build(BuildContext context) {
