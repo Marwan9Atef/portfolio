@@ -302,3 +302,230 @@ button {
   min-height: 100vh;
   background-color: var(--color-black);
 }
+
+/* Project Card Styles */
+.project-card {
+  background: linear-gradient(145deg, #0f0f11 0%, #0B0B0D 50%, #0a0a0c 100%);
+  border: 1px solid rgba(196, 184, 150, 0.08);
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.4s ease, border-color 0.4s ease;
+  position: relative;
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(196, 184, 150, 0.3), transparent);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 40px rgba(196, 184, 150, 0.05);
+  border-color: rgba(196, 184, 150, 0.15);
+}
+
+.project-card:hover::before {
+  opacity: 1;
+}
+
+.project-card-header {
+  position: relative;
+  padding: 2rem 2rem 1rem;
+  text-align: center;
+  min-height: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 640px) {
+  .project-card-header {
+    padding: 1.5rem 1rem 1rem;
+    min-height: 280px;
+  }
+}
+
+.project-card-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 0.25rem;
+  letter-spacing: -0.02em;
+}
+
+@media (max-width: 640px) {
+  .project-card-title {
+    font-size: 1.5rem;
+  }
+}
+
+.project-card-subtitle {
+  font-size: 1rem;
+  color: var(--color-gray);
+  margin-bottom: 1.5rem;
+  direction: rtl;
+}
+
+.project-card-icon {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  object-fit: cover;
+}
+
+@media (max-width: 640px) {
+  .project-card-icon {
+    width: 48px;
+    height: 48px;
+    top: 1.5rem;
+    right: 1rem;
+    border-radius: 12px;
+  }
+}
+
+.project-card-mockups {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 0;
+  position: relative;
+  margin-top: auto;
+  padding: 0 1rem;
+}
+
+.project-card-mockup {
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-card-mockup-center {
+  width: 180px;
+  height: auto;
+  max-height: 340px;
+  z-index: 3;
+  position: relative;
+}
+
+@media (max-width: 640px) {
+  .project-card-mockup-center {
+    width: 140px;
+    max-height: 260px;
+  }
+}
+
+.project-card-mockup-left {
+  width: 160px;
+  height: auto;
+  max-height: 300px;
+  z-index: 2;
+  margin-right: -30px;
+  transform: perspective(800px) rotateY(5deg);
+  opacity: 0.85;
+}
+
+@media (max-width: 640px) {
+  .project-card-mockup-left {
+    width: 120px;
+    max-height: 220px;
+    margin-right: -20px;
+  }
+}
+
+.project-card-mockup-right {
+  width: 160px;
+  height: auto;
+  max-height: 300px;
+  z-index: 2;
+  margin-left: -30px;
+  transform: perspective(800px) rotateY(-5deg);
+  opacity: 0.85;
+}
+
+@media (max-width: 640px) {
+  .project-card-mockup-right {
+    width: 120px;
+    max-height: 220px;
+    margin-left: -20px;
+  }
+}
+
+.project-card:hover .project-card-mockup-center {
+  transform: translateY(-4px);
+}
+
+.project-card:hover .project-card-mockup-left {
+  transform: perspective(800px) rotateY(5deg) translateY(-2px);
+}
+
+.project-card:hover .project-card-mockup-right {
+  transform: perspective(800px) rotateY(-5deg) translateY(-2px);
+}
+
+.project-card-body {
+  padding: 1.5rem 2rem 2rem;
+  border-top: 1px solid rgba(196, 184, 150, 0.06);
+}
+
+@media (max-width: 640px) {
+  .project-card-body {
+    padding: 1.25rem 1rem 1.5rem;
+  }
+}
+
+.project-card-category {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.project-card-category-line {
+  width: 2rem;
+  height: 2px;
+  background-color: var(--color-primary);
+}
+
+.project-card-category-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  color: var(--color-gray);
+  text-transform: uppercase;
+}
+
+.project-card-app-name {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-white);
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.01em;
+}
+
+@media (max-width: 640px) {
+  .project-card-app-name {
+    font-size: 1.35rem;
+  }
+}
+
+.project-card-description {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--color-gray);
+}
