@@ -6,7 +6,9 @@ class AssetsManager {
   static String get github => '$basePath/images/github.svg';
   static String get gmail => '$basePath/images/gmail.svg';
   static String get linkedin => '$basePath/images/linkedin.svg';
-    static String get talk => '$basePath/images/talk.svg';
-    static String get line => '$basePath/images/line.svg';
-    static String get dropdwon => '$basePath/images/dropdown.svg';
+  static String get talk => '$basePath/images/talk.svg';
+  static String get line => '$basePath/images/line.svg';
+  static String get dropdwon => '$basePath/images/dropdown.svg';
+  static String get docTime => "$basePath/images/doctime.png";
+    static String get medcoco => "$basePath/images/medcoco.png";
 }

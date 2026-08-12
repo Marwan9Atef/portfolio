@@ -3,6 +3,7 @@ import 'package:jaspr/jaspr.dart';
 import 'package:portfolio/feature/first/pages/contact_page.dart';
 import 'package:portfolio/feature/first/pages/experience_page.dart';
 import 'package:portfolio/feature/first/pages/home_page.dart';
+import 'package:portfolio/feature/first/pages/project_page.dart';
 import 'package:portfolio/feature/first/pages/skill_page.dart';
 
 class WebPage extends StatelessComponent {
@@ -14,6 +15,7 @@ class WebPage extends StatelessComponent {
       const HomePage(),
       const SkillPage(),
      const ExperiencePage(),
+     const ProjectPage(),
       const ContactPage()
     ]);
   }

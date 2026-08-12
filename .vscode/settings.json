@@ -1,7 +1,7 @@
 {
   "tailwindCSS.experimental.classRegex": [
-    ["classes:[\\s\\S]*?\"([^\"]*)\"", "([^\\s]*)"],
-    ["className:[\\s\\S]*?\"([^\"]*)\"", "([^\\s]*)"]
+    ["classes:[\\s\\S]*?['\"]([^'\"]*)['\"]", "([^\\s]*)"],
+    ["className:[\\s\\S]*?['\"]([^'\"]*)['\"]", "([^\\s]*)"]
   ],
   "tailwindCSS.includeLanguages": {
     "dart": "html"
