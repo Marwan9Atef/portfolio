@@ -8,7 +8,7 @@ class SkillsContent extends StatelessComponent {
 
   @override
   Component build(BuildContext context) {
-    return div(classes: "mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6", [
+    return div(classes: "mt-9 sm:mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6", [
       for (final skill in SkillData.skills)
         SkillContentItem(
           index: skill.index,

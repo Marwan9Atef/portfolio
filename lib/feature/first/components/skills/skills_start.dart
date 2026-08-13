@@ -8,7 +8,7 @@ class SkillsStart extends StatelessComponent {
   @override
   Component build(BuildContext context) {
     return div([
-      div(classes: "flex content-center items-center gap-4", [
+      div(classes: "flex content-center items-center gap-2 sm:gap-3", [
         h2(classes: "font-space italic text-white font-semibold  text-4xl capitalize", [.text("Skills ")]),
         h2(classes: "font-space italic  text-4xl text-primary font-semibold  capitalize ", [.text(" Section")]),
         img(
@@ -18,10 +18,10 @@ class SkillsStart extends StatelessComponent {
       ]),
       p(classes: "text-gray pt-4 flex text-base", [
         .text(
-          "Flutter developer focused on production-scale mobile systems — clean architecture, resilient ",
+          "Flutter developer focused on production-scale mobile systems clean,",
         ),
-        br(),
-        .text(" sync, hardened release pipelines, and measurable quality."),
+        br(classes: "hidden lg:block"),
+        .text("resilient, sync, hardened release pipelines and measurable quality."),
       ]),
     ]);
   }
