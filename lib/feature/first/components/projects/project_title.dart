@@ -7,7 +7,7 @@ class ProjectTitle extends StatelessComponent {
 
   @override
   Component build(BuildContext context) {
-    return  div(classes: "flex content-center items-center gap-2 sm:gap-4", [
+    return  div(classes: "flex content-center items-center gap-2 sm:gap-3", [
         h2(classes: "font-space italic text-white font-semibold  text-3xl sm:text-4xl capitalize", [.text("Projects")]),
         h2(classes: "font-space italic  text-3xl sm:text-4xl  text-primary font-semibold  capitalize ", [.text(" Section")]),
         img(

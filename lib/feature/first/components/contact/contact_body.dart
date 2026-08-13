@@ -9,7 +9,7 @@ class ContactBody extends StatelessComponent {
   @override
   Component build(BuildContext context) {
     return div(
-      classes: "mt-8 flex gap-5 flex-col lg:flex-row justify-center items-center",
+      classes: "mt-4  flex gap-5 flex-col lg:flex-row justify-center items-center",
       [
      const ContactText(),
      const ContactInfo()

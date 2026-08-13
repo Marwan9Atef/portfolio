@@ -19,14 +19,14 @@ class ProjectModel {
       title: "DocTime",
       category: "Medical & Management",
       description:
-          "A clinic scheduling app that helps doctors manage appointments, track live schedule updates, and maintain their profile with photos and credentials.",
+          "A medical practice management app that lets doctors schedule appointments, set up their clinic, and manage their profile with real-time updates that sync to a linked patient website.",
       screenshotPaths: AssetsManager.docTime,
       link: {
         "PlayStore":"https://play.google.com/store/apps/details?id=com.MediSync.doctime",
         "AppStore":"https://apps.apple.com/us/app/doctime/id6769465936",
       },
     ),
-    ProjectModel(title: "Medcocp", category: "Medical & AI", description: "An AI-powered medical imaging platform for radiology teams to upload, organize, and zoom into scans across mobile and desktop.", screenshotPaths: AssetsManager.medcoco, link: {
+    ProjectModel(title: "Medcoco", category: "Medical & AI", description: "An AI-powered medical imaging platform for radiology teams to upload, organize, and zoom into scans across mobile and desktop.", screenshotPaths: AssetsManager.medcoco, link: {
 "Github":"https://github.com/Marwan9Atef/MedCocoApp"
 
     })
