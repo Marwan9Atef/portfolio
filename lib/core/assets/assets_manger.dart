@@ -11,4 +11,5 @@ class AssetsManager {
   static String get dropdwon => '$basePath/images/dropdown.svg';
   static String get docTime => "$basePath/images/doctime.png";
     static String get medcoco => "$basePath/images/medcoco.png";
+       static String get planet => "$basePath/images/planet.png";
 }

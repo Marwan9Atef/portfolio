@@ -29,7 +29,18 @@ class ProjectModel {
     ProjectModel(title: "Medcoco", category: "Medical & AI", description: "An AI-powered medical imaging platform for radiology teams to upload, organize, and zoom into scans across mobile and desktop.", screenshotPaths: AssetsManager.medcoco, link: {
 "Github":"https://github.com/Marwan9Atef/MedCocoApp"
 
-    })
+    }),
+        ProjectModel(
+      title: "Planet",
+      category: "Ride & Sharing",
+      description:
+          " A peer-to-peer app for sharing seats and cargo space on trips, offering a complete journey experience — from booking to cancellation and history — with live route visualization on an interactive map.",
+      screenshotPaths: AssetsManager.planet,
+      link: {
+        "Documentation":"https://github.com/Marwan9Atef/Planet-A",
+
+      },
+    ),
     
   ];
 }
