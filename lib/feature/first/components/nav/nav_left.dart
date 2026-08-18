@@ -11,7 +11,7 @@ class NavLeft extends StatelessComponent {
         .text("Marwan Atef"),
       ]),
       p(classes: "text-[#C4B896] font-spaceGrotesk font-normal text-xs sm:text-sm md:text-[14px]", [
-        .text("Flutter Devloper"),
+        .text("Flutter Developer"),
       ]),
     ]);
   }
