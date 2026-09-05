@@ -17,9 +17,12 @@ export default {
     'home-body-text-first', 'home-body-text-second', 'home-body-text-third',
     'home-body',
     'home-buttons', 'first-home-button', 'second-home-button',
-    'main',
+    'main', 'scrolled', 'page-transition',
     'hover:bg-[#C4B896]', 'hover:text-black', 'hover:border-[#C4B896]', 'hover:shadow-[#C4B896]/40',
     'bg-[#C4B896]', 'bg-[#131211]', 'text-[#09090B]', 'text-[#FAFAFA]',
+    'scroll-reveal', 'scroll-reveal-left', 'scroll-reveal-right', 'scroll-scale',
+    'stagger-1', 'stagger-2', 'stagger-3', 'stagger-4', 'stagger-5',
+    'float-animation', 'pulse-animation', 'shimmer',
   ],
   theme: {
     extend: {

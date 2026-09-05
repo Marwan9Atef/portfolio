@@ -35,6 +35,7 @@ void main() {
         meta(httpEquiv: 'Content-Security-Policy', content: "script-src 'self' 'unsafe-eval' 'unsafe-inline';"),
         link(rel: 'icon', href: '$basePath/images/favicon.ico'),
         link(href: '$basePath/styles.css', rel: 'stylesheet'),
+        script(src: '$basePath/animations.js', defer: true),
       ],
       styles: [],
       body: App(),

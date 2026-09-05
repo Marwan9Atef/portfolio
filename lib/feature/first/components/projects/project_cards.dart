@@ -9,9 +9,13 @@ class ProjectCards extends StatelessComponent {
   @override
   Component build(BuildContext context) {
     return div(
-      classes: 'w-full grid grid-cols-1 md:grid-cols-2 gap-8 mt-6 sm:mt-8   ',
+      classes: 'w-full grid grid-cols-1 md:grid-cols-2 gap-8 mt-6 sm:mt-8',
       [
-        for (final project in ProjectModel.projects) ProjectCard(project: project),
+        for (final project in ProjectModel.projects)
+          div(
+            classes: 'scroll-reveal',
+            [ProjectCard(project: project)],
+          ),
       ],
     );
   }

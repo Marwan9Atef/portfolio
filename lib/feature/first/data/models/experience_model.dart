@@ -20,14 +20,13 @@ class ExperienceModel {
       "Real-time Sync",
       "CI/CD"
     ], typeOfWork: "Part-time Flutter Developer"),
-    ExperienceModel(companyName: "Lavina", date: "2026 – Present", description: "Building an e-commerce platform for medical scrubs using Jaspr, along with a companion admin dashboard developed in Flutter for both mobile and desktop platforms. Configured CI/CD workflows to support consistent, automated releases.", skills: [
+    ExperienceModel(companyName: "Lavina", date: "2026", description: "Building an e-commerce platform for medical scrubs using Nextjs, along with a companion admin dashboard developed in Flutter for both mobile and desktop platforms. Configured CI/CD workflows to support consistent, automated releases.", skills: [
       "Flutter",
-      "Jaspr",
-      "Riverpod",
+      "Nextjs",
       "Cubit",
       "E-commerce",
       "CI/CD"
-    ], typeOfWork: "Part-time Flutter & Jaspr Developer"),
+    ], typeOfWork: "Freelance Front app Developer"),
     ExperienceModel(companyName: "CodePlus", date: "2026 – Present", description: "Gaining hands-on experience in Flutter development as part of an internship, contributing to real-world mobile app projects and learning industry-standard development practices under the guidance of the engineering team.", skills: [
       "Flutter",
       "Mobile Development",

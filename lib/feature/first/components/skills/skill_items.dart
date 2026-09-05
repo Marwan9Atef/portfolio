@@ -8,7 +8,7 @@ class SkillItems extends StatelessComponent {
 
   @override
   Component build(BuildContext context) {
-    return div(classes: "flex flex-wrap gap-2", [
+    return div(classes: "flex flex-wrap gap-2 scroll-reveal", [
       for (final skill in skills) CardItem(text: skill),
     ]);
   }
