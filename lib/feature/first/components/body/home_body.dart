@@ -13,7 +13,7 @@ class HomeBody extends StatelessComponent {
         const HomeBodyText(),
         img(
           src: AssetsManager.homeImage,
-          classes: "hidden lg:block w-1/2 max-w-md  h-16 float-animation",
+          classes: "hidden lg:block w-1/2 max-w-md h-1/2 float-animation",
           alt: "Home Image",
         ),
       ]),
