@@ -1,6 +1,5 @@
 import 'package:jaspr/jaspr.dart';
 import 'package:jaspr/dom.dart';
-import 'package:portfolio/feature/first/components/body/body_button.dart';
 import 'package:portfolio/feature/first/components/body/home_body.dart';
 import 'package:portfolio/feature/first/components/nav/home_nav.dart';
 
@@ -9,6 +8,6 @@ class HomePage extends StatelessComponent {
 
   @override
   Component build(BuildContext context) {
-    return div([const HomeNav(), const HomeBody(), const BodyButton()]);
+    return div([const HomeNav(), const HomeBody()]);
   }
 }
