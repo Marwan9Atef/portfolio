@@ -9,11 +9,11 @@ class HomeBody extends StatelessComponent {
   @override
   Component build(BuildContext context) {
     return div(id: "Home", classes: "scroll-mt-[100px] mt-20 sm:mt-24 md:mt-28 lg:mt-30 fade-in", [
-      div(classes: "flex flex-col lg:flex-row  justify-between gap-8", [
+      div(classes: "flex flex-col-reverse md:flex-row sm:items-center  justify-between gap-8", [
         const HomeBodyText(),
         img(
           src: AssetsManager.homeImage,
-          classes: "hidden lg:block w-1/2 max-w-md h-1/2 float-animation",
+          classes: "w-full md:w-1/2 lg:w-1/2 max-w-md h-auto lg:h-1/2 float-animation",
           alt: "Home Image",
         ),
       ]),
