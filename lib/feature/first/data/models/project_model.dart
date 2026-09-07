@@ -26,10 +26,6 @@ class ProjectModel {
         "AppStore":"https://apps.apple.com/us/app/doctime/id6769465936",
       },
     ),
-    ProjectModel(title: "Medcoco", category: "Medical & AI", description: "An AI-powered medical imaging platform for radiology teams to upload, organize, and zoom into scans across mobile and desktop.", screenshotPaths: AssetsManager.medcoco, link: {
-"Github":"https://github.com/Marwan9Atef/MedCocoApp"
-
-    }),
         ProjectModel(
       title: "Planet",
       category: "Ride & Sharing",
@@ -41,6 +37,11 @@ class ProjectModel {
 
       },
     ),
+    ProjectModel(title: "Medcoco", category: "Medical & AI", description: "An AI-powered medical imaging platform for radiology teams to upload, organize, and zoom into scans across mobile and desktop.", screenshotPaths: AssetsManager.medcoco, link: {
+"Github":"https://github.com/Marwan9Atef/MedCocoApp"
+
+    }),
+    
     
   ];
 }
