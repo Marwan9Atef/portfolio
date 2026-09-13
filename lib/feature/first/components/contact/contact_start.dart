@@ -6,11 +6,6 @@ class ContactStart extends StatelessComponent {
 
   @override
   Component build(BuildContext context) {
-    return div(
-      classes: "flex gap-2",
-      [
-        h2(classes: "font-space italic text-white font-semibold  text-4xl capitalize", [.text("Contact")]),
-        h2(classes: "font-space italic  text-4xl text-primary font-semibold  capitalize ", [.text(" Section")]),
-    ]);
+    return h2(classes: "font-space italic text-white font-semibold  text-4xl capitalize", [.text("Contact")]);
   }
 }

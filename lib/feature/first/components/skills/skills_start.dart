@@ -10,7 +10,7 @@ class SkillsStart extends StatelessComponent {
     return div([
       div(classes: "flex content-center items-center gap-2 sm:gap-3", [
         h2(classes: "font-space italic text-white font-semibold  text-4xl capitalize", [.text("Skills ")]),
-        h2(classes: "font-space italic  text-4xl text-primary font-semibold  capitalize ", [.text(" Section")]),
+       
         img(
           classes: "ml-8 mt-3 w-auto max-w-[200px] sm:max-w-[300px] md:max-w-[400px] align-middle",
           src: AssetsManager.line,

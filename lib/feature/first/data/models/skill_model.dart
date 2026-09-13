@@ -16,73 +16,75 @@ class SkillData {
   static const List<SkillModel> skills = [
     SkillModel(
       index: "01",
-      title: "Platform & cross-platform delivery",
+      title: "Core Flutter & Mobile",
       description:
-          "Building for mobile and web from one component paradigm — Flutter widgets power iOS and Android, Jaspr components power the web, shipped and live on the App Store and Google Play.",
+          "Building and shipping production mobile apps — from widget composition to platform-specific behavior, validated through unit, widget, and integration testing.",
       skills: [
         'Flutter & Dart',
-        'Jaspr',
         'iOS & Android',
-        'Widget system',
+        'Testing (Unit / Widget / Integration)',
         'Shipped to App Stores',
       ],
     ),
     SkillModel(
       index: "02",
-      title: "State & architecture",
+      title: "Architecture & State Management",
       description:
-          "Structuring apps for long-term maintainability — clean separation of layers, reactive state management, and dependency injection that scales.",
+          "Structuring apps for long-term maintainability — clean separation of layers, MVVM-driven design, reactive state management, and dependency injection that scales.",
       skills: [
-        'BLoC / Cubit',
         'Clean Architecture',
+        'MVVM',
         'Repository pattern',
         'Dependency injection',
+        'BLoC / Cubit',
+        'Riverpod',
       ],
     ),
+  
     SkillModel(
       index: "03",
-      title: "Backend & real-time",
+      title: "Data Persistence & Security",
       description:
-          "Integrating cloud backends and REST APIs with robust error handling, interceptors, and real-time data sync across devices.",
-      skills: [
-        'Firebase',
-        'REST APIs',
-        'Dio',
-        'Push notifications',
-        'WebSockets',
-        'grpc',
-      ],
-    ),
-    SkillModel(
-      index: "04",
-      title: "Persistence & routing",
-      description:
-          "Offline-first data strategies and declarative routing — apps that work without a signal and navigate without bugs.",
+          "Offline-first data strategies with secure local storage — apps that work without a signal and keep sensitive data protected on-device.",
       skills: [
         'Hive',
-        'go_router',
         'Shared preferences',
+        'flutter_secure_storage',
         'Offline-first',
       ],
     ),
     SkillModel(
-      index: "05",
-      title: "Web & Dart full-stack",
+      index: "04",
+      title: "Backend & Real-time",
       description:
-          "Extending Flutter expertise to the web with Dart-native frameworks — server-rendered, edge-deployed, and SEO-friendly.",
+          "Integrating cloud backends, REST APIs, and location services with robust error handling, interceptors, and real-time data sync across devices.",
       skills: [
-        'Jaspr',
-        'Dart web',
-        'SSR',
-        'Cloudflare Pages',
-        'SEO',
+        'Firebase',
+        'REST APIs',
+        'gRPC',
+        'WebSockets',
+        'Push notifications',
+        'OpenStreetMap',
+      ],
+    ),
+      SkillModel(
+      index: "05",
+      title: "Navigation & Routing",
+      description:
+          "Declarative, deep-link-ready navigation — nested shell layouts and type-safe routes that scale with app complexity.",
+      skills: [
+        'go_router',
+        'auto_route',
+        'ShellRoute',
+        'Deep Linking',
+        
       ],
     ),
     SkillModel(
       index: "06",
-      title: "Tooling & release pipelines",
+      title: "Release & Delivery",
       description:
-          "Automating builds, signing, and store delivery so shipping is a command, not a ceremony.",
+          "Automating builds, signing, and submissions — structured CI/CD pipelines and version control workflows that turn shipping into a repeatable process.",
       skills: [
         'Fastlane',
         'CI/CD',
@@ -90,6 +92,18 @@ class SkillData {
         'Google Play',
         'Git & GitHub',
         'Figma',
+      ],
+    ),
+    SkillModel(
+      index: "07",
+      title: "Web Development (Additional Skill)",
+      description:
+          "Extending development skills to the web — Dart-native, server-rendered frameworks alongside the modern JavaScript and React ecosystem.",
+      skills: [
+        'JavaScript / TypeScript',
+        'React / Next.js',
+        'Tailwind',
+        'Jaspr',
       ],
     ),
   ];
